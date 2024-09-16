@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Candal", sans-serif;
+ 
+      
+}
+.logo{
+   height: 50;
+   width: 10;
+}
+body{
+background-color: black;
+
+
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header .btn-contato button, .hero-site button{
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/**estilo header*/
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    max-width: 50px;
+}
+header .menu-destopk nav ul{
+    list-style-type: none;
+
+}
+header .menu-destopk nav ul li{
+display: inline-block;
+transition: .2s;
+    text-align:justify;
+    margin: 0 20px;
+}
+header .menu-destopk nav ul li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+ 
+
+}
+.menu-destopk nav a:hover{
+    transform: scale(1.10)
+
+}
+header.btn-contato button{
+    width: 140px;
+    height:5000px;
+
+}
+header .btn-contato button :hover,.hero-site button :hover{
+    background-color: white;
+    color: black;
+
+}
+
+section.hero-site{
+    height: 90vh;
+    background-image: url(../Imag/pexels-joshsorenson-1714205.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 120%;
+    padding: 100px;
+
+}
+.hero-site .txt-hero h1{
+   
+    margin: 41px ;
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+    font-family: "Outfit", system-ui;
+
+   
+    
+}
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 2;
+    font-size: 1000;
+   
+   
+}
+.hero-site .txt-hero p{
+    font-size: 20px;
+ margin: 41px;
+ color: rgb(255, 255, 255);
+
+
+}
+.hero-site .txt-hero p span{
+    display: block;
+
+}
+.hero-site button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    margin: 41px;
+    padding: 4px;;
+    }
+/*vantagens*/
+.services-section {
+    padding: 40px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #242224;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+h2{
+    color: #ffffff;
+    text-align: center;
+   padding: 50px;
+   font-size: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    font-family: "Roboto", system-ui;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.testimonials-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-left: 5px solid #0073e6;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h3 {
+    font-size: 1.1rem;
+    color: #0073e6;
+    text-align: right;
+    padding: 1;
+}
+ h4 {
+  
+  color: #060709;
+ text-align: center;
+  margin: 500;
+}
+.quote-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.quote-section h2{
+    color: #ffffff;
+    font-family: "Roboto", system-ui;
+
+}
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto", system-ui;
+
+   
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+ 
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #0000005d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #0073e6;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
